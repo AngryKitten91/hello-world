@@ -20,7 +20,7 @@ $(document).ready(function(){
     // THEME PICKER
     $('.color-pick').on('click', 'span',function(){
         var color = $(this).css('background-color');
-        $(':root').style.setProperty('--bg-color', color);
+        $(':root').get(0).style.setProperty('--bg-color', color);
     });
 
 });
