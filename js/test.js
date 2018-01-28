@@ -14,13 +14,13 @@ $(document).ready(function(){
 
     //HELLO WORLD BUTTON
     $('.hello').on('click', () => {
-        $('.content').fadeToggle('slow');
+        $('.content').stop().fadeToggle('slow');
     });
 
     // THEME PICKER
     $('.color-pick').on('click', 'span',function(){
         var color = $(this).css('background-color');
-        $(':root').get(0).style.setProperty('--bg-color', color);
+        $(':root').style.setProperty('--bg-color', color);
     });
 
 });
