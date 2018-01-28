@@ -1,0 +1,56 @@
+:root{
+    --bg-color:#286090;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.hello{
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+}
+
+.hello:hover{
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+}
+
+.lead, .content ul{
+    font-size: 18px;
+}
+
+.content{
+    display: none;
+    color: #fff;
+}
+
+.color-pick span{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: block;
+    margin:15px;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.178);
+}
+
+.color-pick{
+    position: fixed;
+    right: 15px;
+    bottom: 5px;    
+}
+
+/* COLORS FOR THEME PICKER */
+.color-pick span:nth-child(1){
+    background-color: #11b427;
+}
+.color-pick span:nth-child(2){
+    background-color: #303030;
+}
+.color-pick span:nth-child(3){
+    background-color: #ca7d18;
+}
+.color-pick span:nth-child(4){
+    background-color: #b40338;
+}
